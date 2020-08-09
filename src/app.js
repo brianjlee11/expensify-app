@@ -17,10 +17,6 @@ store.subscribe(() => {
   console.log(visibleExpenses);
 });
 
-store.dispatch(addExpense({ description: 'Water bill', amount: 800, createdAt: 295730104 }));
-store.dispatch(addExpense({ description: "Gas bill", amount: 500, createdAt: 485736294 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500 }));
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />
